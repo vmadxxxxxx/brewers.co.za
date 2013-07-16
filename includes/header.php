@@ -4,6 +4,9 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
+	<link rel="dns-prefetch" href="//fonts.googleapis.com/">
+	<link rel="dns-prefetch" href="//themes.googleusercontent.com/">
+
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,requiresActiveX=true">
 	<meta name="author" content="Adam Brewer">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,8 +25,9 @@
 	<meta property="og:site_name" content="<?= $config->site_name ?>"/>
 	<meta property="og:description" content="<?= $config->site_desc ?>"/>
 
+	<link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600' rel='stylesheet' type='text/css'>
 	<link href="<?= $config->assets ?>/css/core.css" rel="stylesheet">
-	<script src="<?= $config->assets ?>/js/libs/modernizr.js"></script>
+	<? /* <script src="<?= $config->assets ?>/js/libs/modernizr.js"></script> */ ?>
 
 	<? if ( $config->env !== 'dev' ) : ?>
 		<script>

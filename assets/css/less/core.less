@@ -4,7 +4,7 @@
 
 @import "libs/helpers.less";
 @import "libs/normalize.less";
-
+@import "fonts.less";
 
 
 
@@ -16,9 +16,12 @@
 @c-yellow: #FFB95E;
 @c-earth: #E5E2D8;
 
-@ff-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@ff-sans: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@ff-p22: "P22", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 @ff-serif: Baskerville, "utopia-std", "Hoefler Text", Georgia, Times, serif;
 @ff-mono: Monaco, Menlo, Consolas, "Courier New", monospace;
+
+@ff-primary: @ff-sans;
 
 @c-bg: #FFF;
 @c-copy: #363636;
@@ -57,7 +60,8 @@ html {
 body {
     width: 100%;
     height: 100%;
-    font-family: @ff-sans;
+    font-family: @ff-primary;
+    font-weight: 400;
     background-color: @c-bg;
     color: @c-copy;
     font-size: 1.4em; // 14 px

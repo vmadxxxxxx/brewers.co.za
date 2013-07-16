@@ -1,35 +1,29 @@
 module.exports = function(grunt) {
 
-    // Load the all the plugins that Grunt requires
-    grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-modernizr');
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-contrib-clean');
+    require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         watch: {
-            // all: {
-            //     files: ['**/*.js', '**/*.less'],
-            //     tasks: [
-            //         'livereload',
-            //         'less:dev'
-            //     ],
-            //     options: {
-            //         nospawn: true,
-            //     }
-            // },
-            // js: {
-            //     files: ['**/*.js'],
-            //     tasks: [
-            //         // 'livereload'
-            //     ],
-            //     options: {
-            //         nospawn: true,
-            //     }
-            // },
+            all: {
+                files: ['**/*.js', '**/*.less'],
+                tasks: [
+                    'livereload',
+                    'less:dev'
+                ],
+                options: {
+                    nospawn: true,
+                }
+            },
+            js: {
+                files: ['**/*.js'],
+                tasks: [
+                    // 'livereload'
+                ],
+                options: {
+                    nospawn: true,
+                }
+            },
             plugins: {
                 files: ['assets/js/plugins/*.js'],
                 tasks: [
