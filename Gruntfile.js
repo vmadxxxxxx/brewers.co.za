@@ -1,48 +1,35 @@
 module.exports = function(grunt) {
 
+    var reloadPort = 35729;
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         watch: {
-            all: {
-                files: ['**/*.js', '**/*.less'],
-                tasks: [
-                    'livereload',
-                    'less:dev'
+            options: { nospawn: true },
+            env: {
+                files: [
+                    "Gruntfile.js",
+                    "*.php"
                 ],
-                options: {
-                    nospawn: true,
-                }
+                options: { livereload: true },
+                tasks: []
             },
             js: {
-                files: ['**/*.js'],
-                tasks: [
-                    // 'livereload'
+                files: [
+                    'assets/js/plugins/*.js',
+                    'assets/js/libs/*.js',
+                    'assets/js/*.js'
                 ],
-                options: {
-                    nospawn: true,
-                }
-            },
-            plugins: {
-                files: ['assets/js/plugins/*.js'],
-                tasks: [
-                    'uglify:plugins'
-                ],
-                options: {
-                    nospawn: true,
-                    livereload: true  // not working in Chrome 27?
-                }
+                options: { livereload: true },
+                tasks: ['uglify:development']
             },
             less: {
-                files: ['**/*.less'],
-                tasks: [
-                    'less:dev'
+                files: [
+                    'assets/css/less/*.less'
                 ],
-                options: {
-                    nospawn: true,
-                    livereload: true // not working in Chrome 27?
-                }
+                options: { livereload: true },
+                tasks: ['less:development']
             }
         },
 
@@ -50,7 +37,7 @@ module.exports = function(grunt) {
         // The difference between the production level is the
         // level of compression
         less: {
-            dev: {
+            development: {
                 options: {
                     yuicompress: false,
                     compress: false
@@ -66,7 +53,7 @@ module.exports = function(grunt) {
                     }
                 ]
             },
-            release: {
+            production: {
                 options: {
                     yuicompress: true,
                     compress: true
@@ -109,7 +96,7 @@ module.exports = function(grunt) {
             },
 
             // Development-level code
-            dev: {
+            development: {
                 options: {
                     banner: '/*!\n' +
                         ' * <%= pkg.name %> - <%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd H:MM:ss") %>\n' +
@@ -135,7 +122,7 @@ module.exports = function(grunt) {
             },
 
             // Production-level code
-            release: {
+            production: {
                 options: {
                     banner: '/*!\n' +
                         ' * <%= pkg.name %> - <%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd H:MM:ss") %>\n' +
@@ -266,10 +253,10 @@ module.exports = function(grunt) {
      * default tasks when Grunt is run
      * without any arguments
      */
-    grunt.registerTask('default', [
-        'copy:installFromBower',
-        'uglify:plugins'
-    ]);
+    // grunt.registerTask('default', [
+    //     'copy:installFromBower',
+    //     'uglify:plugins'
+    // ]);
 
     /**
      * Revert and tests carried out before
@@ -284,26 +271,20 @@ module.exports = function(grunt) {
      * still in development
      */
     grunt.registerTask('build', [
-        'less:dev',
-        'uglify:dev'
+        'less:production',
+        'uglify:production'
     ]);
 
     /**
      * Build a release/production/enterprise version
      * of all scripts and files
      */
-    grunt.registerTask('build:release', [
-        'less:release',
-        'uglify:release',
-        'modernizr'
-    ]);
 
     /**
      * Live developing
      *
      */
-    grunt.registerTask('dev', [
-        'less:dev', // so we have the latest when first loading the site
-        'watch:less'
+    grunt.registerTask('default', [
+        'watch'
     ]);
 };

@@ -8,6 +8,14 @@
     *zoom: 1;
 }
 
+// An rem font-size mixin providing fallback to px
+.font-size(@sizeValue) {
+    @remValue: @sizeValue;
+    @pxValue: (@sizeValue * 10);
+    font-size: ~"@{pxValue}px";
+    font-size: ~"@{remValue}rem";
+}
+
 .content-columns(@width: 50%, @count: 2, @gap: 0px) {
     -webkit-column-width: @width;
        -moz-column-width: @width;

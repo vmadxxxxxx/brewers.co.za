@@ -11,10 +11,10 @@
 /* ====================================================
     LESS VARIABLES
 ==================================================== */
-@c-darkgrey: #303030;
-@c-blue: #3689CE;
+@c-darkgrey: #2F2F2F;
+@c-blue: #3688ce;
 @c-yellow: #FFB95E;
-@c-earth: #E5E2D8;
+@c-earth: #E4E2D9;
 
 @ff-sans: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @ff-p22: "P22", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
@@ -25,15 +25,11 @@
 
 @c-bg: #FFF;
 @c-copy: #363636;
+@c-copy-light: #fff;
 
 /* ====================================================
     BASE STYLES
 
-    Base rules are the defaults. They are almost exclusively
-    single element selectors but it could include attribute selectors,
-    pseudo-class selectors, child selectors or sibling selectors.
-    Essentially, a base style says that wherever this element is on the page,
-    it should look like...
 ==================================================== */
 
 * {
@@ -64,8 +60,8 @@ body {
     font-weight: 400;
     background-color: @c-bg;
     color: @c-copy;
-    font-size: 1.4em; // 14 px
-    line-height: 1.5;
+    .font-size(1.4);
+    line-height: 1.3;
 }
 
 ::-webkit-input-placeholder {}
@@ -80,7 +76,9 @@ body {
 padding: 40px;
 }
 
-a {}
+a {
+    .transition(0.2s all ease);
+}
 a:link {}
 a:visited {}
 a:hover {}
@@ -100,32 +98,294 @@ input:checked {}
 input:indeterminate {} /* un-selected radio buttons :) */
 
 /* ====================================================
-    LAYOUT STYLES
-
-    Layout rules divide the page into sections.
-    Layouts hold one or more modules together.
-==================================================== */
-
-
-
-/* ====================================================
     MODULES STYLES
 
-    Modules are the reusable, modular parts of our design.
-    They are the callouts, the sidebar sections, the product lists and so on.
+==================================================== */
+.main-nav {
+    float: right;
+    margin-top: 0.8em;
+}
+.main-nav-link {
+    .font-size(1em);
+    font-weight: bold;
+    font-family: @ff-p22;
+    color: @c-copy;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    margin: 0 0 0 2em;
+    padding: 0;
+
+    &:hover {
+        border-bottom: 2px solid @c-copy;
+    }
+
+    &.log-in {
+        color: @c-blue;
+        margin-left: 4em;
+        &:hover {
+            border-bottom-color: @c-blue;
+        }
+    }
+}
+.secondary-nav {
+    float: right;
+    margin-top: 0.1em;
+}
+.secondary-nav-link {
+    .font-size(1.1);
+    font-weight: 300;
+    font-family: @ff-p22;
+    color: @c-copy-light;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    margin: 0 0 0 2em;
+    padding: 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+
+    &:hover {
+        border-bottom: 2px solid @c-copy-light;
+    }
+}
+.section {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    .inner {
+        .padd;
+    }
+
+    a {
+        color: @c-blue;
+        text-decoration: none;
+    }
+
+    &.section-dark {
+        background-color: @c-darkgrey;
+        color: @c-copy-light;
+    }
+
+    &.section-earth {
+        background-color: @c-earth;
+    }
+}
+.section-title {
+    margin: 0 auto;
+    // max-width: 520px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    .font-size(4.2);
+    font-weight: 600;
+    font-family: @ff-p22;
+    > small {
+        .font-size(1.6);
+        margin: 0.1em 0;
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 6px;
+        .font-size(8);
+        line-height: 1;
+        margin: 0.2em auto 0.8em;
+        background-color: @c-yellow;
+    }
+
+    &.section-title--hero {
+        // font-size: 6em;
+        .font-size(8);
+        line-height: 1.1;
+        margin-top: -0.6em;
+        &:after {
+            margin-top: 0.4em;
+            width: 200px;
+        }
+    }
+}
+.section-copy {
+    margin: 1em auto;
+    max-width: 420px;
+    .font-size(2.4);
+    font-weight: 600;
+}
+.arrow {
+    display: block;
+    width: 19px;
+    height: 30px;
+    margin: auto;
+    padding: 3em 0;
+    background: transparent url(../img/arrow.png) no-repeat center center scroll;
+}
+.hr {
+    border-bottom: none;
+    border-color: #909090;
+}
+.copy-legal {
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #222;
+    font-weight: 200;
+    color: #707070;
+    line-height: 1.6;
+    a {
+        text-decoration: none;
+        color: #707070;
+        font-weight: 400;
+        border-bottom: 1px solid #444;
+        &:hover {
+            color: #ddd;
+            border-bottom: 1px solid transparent;
+            // text-decoration: none;
+        }
+    }
+}
+.contact-links {
+    float: right;
+}
+.grids {
+    max-width: 800px;
+    margin: auto;
+}
+.g {
+    float: left;
+    display: inline-block;
+    vertical-align: top;
+
+    &.g-1 { width: 100%; }
+    &.g-1-3 { width: 33%; }
+    &.g-1-2 { width: 50%; }
+}
+.twitter-feed {
+    .font-size(1.8);
+    font-weight: 600;
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .g { padding: 0 2%; }
+    .g-1 {
+        text-align: center;
+    }
+    .btn {
+        clear: both;
+        display: inline-block;
+        margin: 3em auto 1em;
+    }
+}
+.icon-twitter-feed {
+    .font-size(5);
+    color: darken(@c-earth, 8%);
+    display: block;
+    text-align: center;
+    margin: -0.4em auto 1em;
+}
+
+.btn {
+    text-transform: uppercase;
+    border: 0;
+    background-color: @c-yellow;
+    padding: 1em 2em;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    color: @c-copy !important;
+    font-weight: 700;
+    .font-size(1.8);
+    .border-radius(4px);
+
+    &:hover {
+        background-color: @c-blue;
+        color: @c-copy-light !important;
+        text-decoration: none !important;
+    }
+}
+
+/* ====================================================
+    LAYOUT STYLES
+
 ==================================================== */
 
+.wrapper {
+}
+.header {
+    border-top: 8px solid @c-blue;
+    overflow: auto;
+    .inner {
+        .padd;
+        padding-top: 2.6em;
+        padding-bottom: 2.6em;
+    }
+}
+.section-welcome {
+    background: #eee url(../img/bg.welcome.jpg) no-repeat center top;
+    padding-bottom: 4em;
+}
+.footer {
+    background-color: @c-darkgrey;
+    overflow: auto;
+    padding-bottom: 6em;
+    .logo {
+        width: 127px;
+        height: 39px;
+        background-image: url(../img/logo_alt.png);
+        margin: 0;
+    }
+    .inner {
+        .padd;
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+    .copy-legal {
+        float: left;
+        margin-right: 2em;
+        .font-size(1.2);
+    }
+    .icon {
+        .font-size(1.8);
+        position: relative;
+        top: 0.1em;
+    }
+}
+.animations {
+    text-align: center;
+    margin: 5em auto 2em;
+}
 
+.animations-copy {
+    color: @c-blue;
+    .font-size(1.6);
+}
+/* ====================================================
+    MIXINS AND EXTENSIONS
+
+==================================================== */
+.padd {
+    padding: 0 4%;
+    max-width: 1100px;
+    margin: auto;
+}
+.logo {
+    display: block;
+    width: 203px;
+    height: 62px;
+    background: transparent url(../img/logo.png) no-repeat top left;
+    background-size: 100%;
+    margin-top: -8px;
+    padding-top: 2.6em;
+}
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
 
 /* ====================================================
     STATES STYLES
 
-    State rules are ways to describe how our modules or layouts will
-    look when in a particular state.
-    Is it hidden or expanded? Is it active or inactive?
-    They are about describing how a module or layout looks on screens that are smaller or bigger.
-    They are also about describing how a module might look in different
-    views like the home page or the inside page.
 ==================================================== */
 
 

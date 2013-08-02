@@ -43,4 +43,17 @@
 </head>
 <body data-base-url="http://<?= $_SERVER['HTTP_HOST'] ?>">
 
+	<header class="header">
+		<div class="inner cf">
+			<a class="logo pull-left ir" rel="logo" href="<?= $config->site_url ?>">Brewer's Advertising Data</a>
+			<nav class="main-nav">
+				<a title="About" href="#about" class="main-nav-link">About</a>
+				<a title="Products" href="#products" class="main-nav-link">Products</a>
+				<a title="Pricing" href="#pricing" class="main-nav-link">Pricing</a>
+				<a title="Contact" href="#contact" class="main-nav-link">Contact</a>
+				<a title="Log in" href="#log-in" class="log-in main-nav-link">Log In</a>
+			</nav>
+		</div>
+	</header>
+
 	<div class="wrapper">
