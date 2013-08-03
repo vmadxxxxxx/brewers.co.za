@@ -4,6 +4,7 @@
 
 @import "libs/helpers.less";
 @import "libs/normalize.less";
+@import "animations.less";
 @import "fonts.less";
 
 
@@ -352,6 +353,138 @@ input:indeterminate {} /* un-selected radio buttons :) */
 .animations {
     text-align: center;
     margin: 5em auto 2em;
+    .animation {
+        display: none;
+        width: 180px;
+        height: 240px;
+        margin: auto;
+        border: 8px solid @c-blue;
+        .border-radius(4px);
+    }
+    .cssanimations & {
+        .no-animations {
+            display: none;
+        }
+        .animation {
+            display: block;
+        }
+    }
+}
+.animation {
+    position: relative;
+}
+.animation-1 {
+    .a-path {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        border: 6px solid #fff;
+        .border-radius(4px);
+        width: 70px;
+        height: 130px;
+    }
+    .a-disk {
+        position: absolute;
+        border: 6px solid #fff;
+        .border-radius(50%);
+        width: 28px;
+        height: 28px;
+        background-color: @c-darkgrey;
+        top: -16px;
+        left: -16px;
+    }
+    &:hover {
+        .a-disk-1 { .animation(5s tron-disk 0s linear infinite forwards reverse); }
+        .a-disk-2 { .animation(6s tron-disk 0.1s linear infinite forwards); }
+        .a-disk-3 { .animation(7s tron-disk 0.2s linear infinite forwards reverse); }
+        .a-disk-4 { .animation(8s tron-disk 0.7s linear infinite forwards); }
+        .a-disk-5 { .animation(9s tron-disk 0.2s linear infinite forwards); }
+        .a-disk-6 { .animation(10s tron-disk 0s linear infinite forwards reverse); }
+    }
+}
+.animation-2 {
+    .a-clock {
+        position: absolute;
+        top:0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        width: 120px;
+        height: 120px;
+        border: 6px solid #fff;
+        .border-radius(50%);
+    }
+    .h-hand,
+    .m-hand,
+    .s-hand {
+        position: absolute;
+        background: #fff;
+        width: 6px;
+        top: 52px;
+        left: 52px;
+        -webkit-transform-origin: top center;
+    }
+    .h-hand {
+        height: 30px;
+        .transform(rotate(135deg));
+    }
+    .m-hand {
+        height: 36px;
+        .transform(rotate(225deg));
+    }
+    .s-hand {
+        height: 40px;
+        width: 2px;
+        .transform(rotate(0deg));
+    }
+    &:hover {
+        .s-hand { .animation(1s clock-hands 0s linear infinite forwards reverse); }
+        .m-hand { .animation(14s clock-hands 0s linear infinite forwards reverse); }
+        .h-hand { .animation(40s clock-hands 0s linear infinite forwards reverse); }
+    }
+}
+.animation-3 {
+    .a-tick {
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        border: 6px solid #fff;
+    }
+    .tick-head,
+    .tick-tail {
+        position: absolute;
+    }
+    .tick-head {
+        width: 6px;
+        background: #fff;
+        height: 20px;
+        top: 10px;
+        left: 4px;
+        -webkit-transform-origin: top center;
+        .transform(rotate(315deg));
+    }
+    .tick-tail {
+        width: 6px;
+        background: #fff;
+        height: 60px;
+        top: 26px;
+        left: 16px;
+        -webkit-transform-origin: top center;
+        .transform(rotate(225deg));
+    }
+    &:hover {
+        .tick-head { .animation(2s tick-head 0s linear infinite forwards); }
+        .tick-tail { .animation(2s tick-tail 0s linear infinite forwards); }
+    }
 }
 
 .animations-copy {
@@ -387,7 +520,6 @@ input:indeterminate {} /* un-selected radio buttons :) */
     STATES STYLES
 
 ==================================================== */
-
 
 
 

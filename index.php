@@ -30,17 +30,40 @@
                 		<figure class="ri no-animations">
 							<img src="<?= $config->assets ?>/img/we-know-sequence_01.png" alt="Industry changes">
 						</figure>
+						<figure class="animation animation-1">
+							<div class="a-path">
+								<i class="a-disk a-disk-1"></i>
+								<i class="a-disk a-disk-2"></i>
+								<i class="a-disk a-disk-3"></i>
+								<i class="a-disk a-disk-4"></i>
+								<i class="a-disk a-disk-5"></i>
+								<i class="a-disk a-disk-6"></i>
+							</div>
+						</figure>
 						<p class="animations-copy">Industry changes <br> happen frequently</p>
 					</div>
 					<div class="g g-1-3">
 						<figure class="ri no-animations">
 							<img src="<?= $config->assets ?>/img/we-know-sequence_02.png" alt="Minute-by-minute updates">
 						</figure>
+						<figure class="animation animation-2">
+							<div class="a-clock">
+								<i class="s-hand"></i>
+								<i class="h-hand"></i>
+								<i class="m-hand"></i>
+							</div>
+						</figure>
 						<p class="animations-copy">Get minute-by-minute <br> updates</p>
 					</div>
 					<div class="g g-1-3">
 						<figure class="ri no-animations">
 							<img src="<?= $config->assets ?>/img/we-know-sequence_03.png" alt="Permission-based data">
+						</figure>
+						<figure class="animation animation-3">
+							<div class="a-tick">
+								<i class="tick-head"></i>
+								<i class="tick-tail"></i>
+							</div>
 						</figure>
 						<p class="animations-copy">All the data is <br> permission-based</p>
                 	</div>

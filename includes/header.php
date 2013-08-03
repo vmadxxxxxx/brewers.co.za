@@ -27,7 +27,7 @@
 
 	<link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600' rel='stylesheet' type='text/css'>
 	<link href="<?= $config->assets ?>/css/core.css" rel="stylesheet">
-	<? /* <script src="<?= $config->assets ?>/js/libs/modernizr.js"></script> */ ?>
+	<script src="<?= $config->assets ?>/js/libs/modernizr-custom.js"></script>
 
 	<? if ( $config->env !== 'dev' ) : ?>
 		<script>

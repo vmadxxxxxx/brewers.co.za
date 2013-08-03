@@ -173,7 +173,7 @@ module.exports = function(grunt) {
                 "domprefixes" : false
             },
             // By default, source is uglified before saving
-            "uglify" : false,
+            "uglify" : true,
             // Define any tests you want to impliticly include.
             "tests" : [
                 /*
