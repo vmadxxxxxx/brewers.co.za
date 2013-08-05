@@ -32,10 +32,35 @@
 	b.setAttribute("data-platform", Site.platform);
 
 
-	/**
-	 * Your functions here
-	 *
-	 */
+	var twitterFeed = $("#twitter-feed");
+	if ( twitterFeed.length ) {
+
+		var tweetTemplate = '<article class="g g-1-3">';
+		tweetTemplate += '<header>';
+		tweetTemplate += '<a target="_blank" href="{{link}}"><time title="{{datetime}}" datatime="{{datetime}}">{{nicedate}}</time></a>';
+		tweetTemplate += '</header>';
+		tweetTemplate += '<p>{{body}}</p>';
+		tweetTemplate += '</article>';
+
+		var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+		$.get(Site.basePath + '/twitter/api.php', {}, function (resp) {
+			var i = 0,
+				tweets = resp,
+				tweetsHtml = '';
+			for ( i; i < 3; i++ ) {
+				if ( tweets[i] ) {
+					var tweet = tweets[i],
+						tweetDate = new Date(tweet.created_at),
+						niceDate = tweetDate.getUTCDate() + ' ' + months[tweetDate.getUTCMonth()],
+						tweetText = tweet.text;
+					tweetsHtml += tweetTemplate.replace('{{body}}', tweetText).replace('{{link}}', 'https://twitter.com/brewersapps/status/' + tweet.id_str).replace(/{{datetime}}/g, tweet.created_at).replace('{{nicedate}}', niceDate);
+				}
+			}
+			$('#twitter-feed').removeClass('loading');
+			$('#tweets').html(tweetsHtml).removeClass('hide');
+		});
+	}
 
 
 }(Modernizr, window, document));

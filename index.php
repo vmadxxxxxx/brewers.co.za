@@ -113,25 +113,8 @@
 				    News from<br> <a title="@brewersapps" target="_blank" href="http://twitter.com/brewersapps">@BrewersApps</a>
 				</h1>
 				<i class="icon icon-twitter-1 icon-twitter-feed"></i>
-                <aside class="twitter-feed grids cf">
-                	<article class="g g-1-3">
-						<header>
-							<a href="#"><time datatime="">8 Jul</time></a>
-						</header>
-						<p>Hilary Joffe, will be returning to Business Day at the end of this month.</p>
-					</article>
-					<article class="g g-1-3">
-						<header>
-							<a href="#"><time datatime="">6 Jul</time></a>
-						</header>
-						<p><a href="#">@BrianOConnell</a> Crikey! The Brewer Boys have done an amazing job with @BrewersApps!</p>
-					</article>
-					<article class="g g-1-3">
-						<header>
-							<a href="#"><time datatime="">4 Jul</time></a>
-						</header>
-						<p>JUST ANNOUNCED: Eric D'Oliveira will quit as MD of 140BBDO at the end of June and join Draftfcb</p>
-                	</article>
+                <aside id="twitter-feed" class="twitter-feed grids cf loading">
+                	<div id="tweets" class="tweets hide"></div>
                 	<div class="g g-1">
                 		<a class="btn" title="@brewersapps" target="_blank" href="http://twitter.com/brewersapps">Go to Twitter</a>
                 	</div>

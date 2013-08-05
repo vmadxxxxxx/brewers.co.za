@@ -770,6 +770,7 @@ a {
 .section {
   padding-top: 5em;
   padding-bottom: 5em;
+  position: relative;
 }
 .section .inner {
   padding: 0 4%;
@@ -780,12 +781,33 @@ a {
   color: #3688ce;
   text-decoration: none;
 }
+.section:not(:last-child):after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: -18px;
+  margin: auto;
+  border-top: 18px solid #f8f8f8;
+  border-right: 24px solid transparent;
+  border-bottom: 0 solid transparent;
+  border-left: 24px solid transparent;
+}
 .section.section-dark {
   background-color: #2f2f2f;
   color: #ffffff;
 }
+.section.section-dark:after {
+  border-top-color: #2f2f2f;
+}
 .section.section-earth {
   background-color: #e4e2d9;
+}
+.section.section-earth:after {
+  border-top-color: #e4e2d9;
 }
 .section-title {
   margin: 0 auto;
@@ -881,9 +903,11 @@ a {
   width: 50%;
 }
 .twitter-feed {
+  position: relative;
   font-size: 18px;
   font-size: 1.8rem;
   font-weight: 600;
+  overflow: auto;
 }
 .twitter-feed a:hover {
   text-decoration: underline;
@@ -898,6 +922,52 @@ a {
   clear: both;
   display: inline-block;
   margin: 3em auto 1em;
+}
+.twitter-feed:after {
+  opacity: 0;
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border-top: 4px solid #363636;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid #363636;
+  border-left: 4px solid transparent;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-transition: 0.6s ease all 0.2s;
+  -moz-transition: 0.6s ease all 0.2s;
+  -ms-transition: 0.6s ease all 0.2s;
+  -o-transition: 0.6s ease all 0.2s;
+  transition: 0.6s ease all 0.2s;
+  -webkit-animation: 0.6s clock-hands 0s ease-in-out infinite forwards alternate;
+  -moz-animation: 0.6s clock-hands 0s ease-in-out infinite forwards alternate;
+  -ms-animation: 0.6s clock-hands 0s ease-in-out infinite forwards alternate;
+  -o-animation: 0.6s clock-hands 0s ease-in-out infinite forwards alternate;
+  animation: 0.6s clock-hands 0s ease-in-out infinite forwards alternate;
+}
+.twitter-feed.loading:after {
+  opacity: 1;
+}
+.tweets {
+  -webkit-transition: 0.8s ease all 0.6s;
+  -moz-transition: 0.8s ease all 0.6s;
+  -ms-transition: 0.8s ease all 0.6s;
+  -o-transition: 0.8s ease all 0.6s;
+  transition: 0.8s ease all 0.6s;
+  opacity: 1;
+}
+.tweets.hide {
+  opacity: 0;
 }
 .icon-twitter-feed {
   font-size: 50px;
