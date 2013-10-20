@@ -767,8 +767,6 @@ a {
   margin-top: 0.8em;
 }
 .main-nav-link {
-  font-size: 10empx;
-  font-size: 1emrem;
   font-weight: bold;
   font-family: "P22", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   color: #363636;
@@ -1221,6 +1219,7 @@ a {
   padding: 0 1.4em;
   font-size: 18px;
   font-size: 1.8rem;
+  margin-bottom: 1.4em;
 }
 .family-member .ri {
   border-radius: 50%;
@@ -1292,6 +1291,7 @@ a {
   height: 39px;
   background-image: url(../img/logo_alt.png);
   margin: 0;
+  float: left;
 }
 .footer .inner {
   padding: 0 4%;
@@ -1445,6 +1445,111 @@ a {
 
     Never set breakpoints for devices, only when the design requires it.
 ========================================================================== */
+@media screen and (max-width: 1120px) {
+  .animations .g {
+    display: none;
+  }
+  .animations .g:last-of-type {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .app-boxes,
+  .the-family {
+    max-width: 640px;
+  }
+  .app-boxes .g,
+  .the-family .g {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 920px) {
+  .footer {
+    text-align: center;
+  }
+  .footer .secondary-nav--light {
+    float: none;
+    margin-bottom: 2em;
+    margin-top: 0;
+  }
+  .footer .copy-legal {
+    float: none;
+    margin-bottom: 1em;
+  }
+}
+@media screen and (max-width: 800px) {
+  .logo {
+    margin: auto;
+    float: none;
+  }
+  .main-nav {
+    clear: both;
+    float: none;
+    text-align: justify;
+    padding-top: 2em;
+  }
+  .main-nav:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+  }
+  .main-nav-link {
+    margin: 0 1em 1em !important;
+    display: inline-block;
+  }
+  .header .inner {
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .app-boxes,
+  .the-family {
+    max-width: 360px;
+  }
+  .app-boxes .g,
+  .the-family .g {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .section-howitworks .grids:not(.animations) .g {
+    width: 100%;
+  }
+  .section-howitworks .section-subcopy-cont {
+    max-width: inherit;
+  }
+  .pricing-tiers .g,
+  .tweets .g {
+    width: 100%;
+  }
+  .form-signup .input {
+    width: 100%;
+    float: none;
+  }
+  .tweets p {
+    margin-top: 0;
+  }
+  .footer {
+    padding-bottom: 1em;
+  }
+  .footer .inner {
+    padding-top: 2em;
+    padding-bottom: 1em;
+  }
+  .footer .logo {
+    float: none;
+    margin: auto;
+  }
+  .footer .secondary-nav {
+    clear: both;
+    float: none;
+    text-align: center;
+    margin: 2em auto;
+  }
+  .footer .secondary-nav--light {
+    margin-top: 0;
+  }
+}
 /* ==|== print styles =======================================================
     Print styles.
     Inlined to avoid required HTTP connection: h5bp.com/r

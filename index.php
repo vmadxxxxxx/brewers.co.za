@@ -21,10 +21,10 @@
 				    How it works
 				</h1>
 				<section class="animations grids">
-					<figure class="ani-servers ri g g-1-3">
+					<figure class="ani-servers g g-1-3">
 						<img src="<?= $config->assets ?>/img/servers.png" alt="Servers">
 					</figure>
-					<div class="ani-dataprogress g g-1-3">
+					<figure class="ani-dataprogress g g-1-3">
 						<div class="ani-popups">
 							<aside class="ani-popup popup-1">
 								<header>
@@ -56,8 +56,8 @@
 							</aside>
 						</div>
 						<div class="ani-dataline"></div>
-					</div>
-					<figure class="ani-gadgets ri g g-1-3">
+					</figure>
+					<figure class="ani-gadgets g g-1-3">
 						<img src="<?= $config->assets ?>/img/gadgets.png" alt="Devices and gadgets">
 					</figure>
 					<i class="cf"></i>
