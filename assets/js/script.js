@@ -32,6 +32,38 @@
 	b.setAttribute("data-platform", Site.platform);
 
 
+
+	/**
+	 * Make the sections full-page and create a
+	 * smooth scroll function to nevigate between them
+	 *
+	 */
+	var $sections = $('.section');
+	if (false){//$sections.length) {
+		var wHeight = window.innerHeight,
+			wWidth = window.innerWidth;
+		$sections
+			.addClass('center-content')
+			.css({'min-height': wHeight})
+			.first().css({'margin-top': -126});
+		// Smooth scrolling
+		$('.js-smoothscroll').smoothScroll({
+			offset: 1,
+			preventDefault: true,
+			easing: 'easeInOutExpo',
+			speed: 900,
+			afterScroll: function() {
+				window.location.hash = this.hash || '';
+			}
+		});
+	}
+
+
+
+	/**
+	 * Twitter Stuff
+	 *
+	 */
 	var twitterFeed = $("#twitter-feed");
 	if ( twitterFeed.length ) {
 

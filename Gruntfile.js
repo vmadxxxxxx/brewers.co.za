@@ -270,15 +270,19 @@ module.exports = function(grunt) {
      * Generate a buiild of the app
      * still in development
      */
-    grunt.registerTask('build', [
+    grunt.registerTask('build-production', [
         'less:production',
         'uglify:production'
     ]);
 
     /**
-     * Build a release/production/enterprise version
-     * of all scripts and files
+     * Generate a buiild of the app
+     * still in development
      */
+    grunt.registerTask('build-development', [
+        'less:development',
+        'uglify:development'
+    ]);
 
     /**
      * Live developing
