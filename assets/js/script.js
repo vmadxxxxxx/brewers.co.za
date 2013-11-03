@@ -39,13 +39,13 @@
 	 *
 	 */
 	var $sections = $('.section');
-	if (false){//$sections.length) {
+	if ($sections.length) {
 		var wHeight = window.innerHeight,
 			wWidth = window.innerWidth;
 		$sections
 			.addClass('center-content')
 			.css({'min-height': wHeight})
-			.first().css({'margin-top': -126});
+			// .first().css({'margin-top': -126});
 		// Smooth scrolling
 		$('.js-smoothscroll').smoothScroll({
 			offset: 1,
@@ -76,7 +76,7 @@
 
 		var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
-		$.get(Site.basePath + '/twitter/api.php', {}, function (resp) {
+		$.get('twitter/api.php', {}, function (resp) {
 			var i = 0,
 				tweets = resp,
 				tweetsHtml = '';
@@ -84,7 +84,7 @@
 				if ( tweets[i] ) {
 					var tweet = tweets[i],
 						tweetDate = new Date(tweet.created_at),
-						niceDate = tweetDate.getUTCDate() + ' ' + months[tweetDate.getUTCMonth()],
+						niceDate = tweetDate.getUTCDate() + ' ' + months[tweetDate.getUTCMonth()] + ' at ' + tweetDate.getHours() + ':' + tweetDate.getMinutes(),
 						tweetText = tweet.text;
 					tweetsHtml += tweetTemplate.replace('{{body}}', tweetText).replace('{{link}}', 'https://twitter.com/brewersapps/status/' + tweet.id_str).replace(/{{datetime}}/g, tweet.created_at).replace('{{nicedate}}', niceDate);
 				}

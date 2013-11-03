@@ -29,9 +29,9 @@ TECHNOLOGY
 Launchpad
 https://github.com/adamcbrewer/launchpad
 
-HTML5BP, LESS, CodeKit, Modernizr, jQuery, SMACSS, Grunt.js, Bower.js
+HTML5BP, LESS, jQuery, SMACSS, Grunt.js, Bower.js
 
-______________________________________________________________________________
+_______________________________________________________________________________
 
 DEVELOPMENT ENVIRONMENT
 
@@ -41,12 +41,12 @@ _______________________________________________________________________________
 
 FONTS
 
---
+P22 Underground, Source Sans
 
 _______________________________________________________________________________
 
 THANKS TO
 
-Google
+Google Fonts
 Bacon
 Coffee

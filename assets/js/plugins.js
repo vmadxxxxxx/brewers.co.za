@@ -1,5 +1,5 @@
 /*!
- * Plugins - 2013-08-25 11:34:25
+ * Plugins - 2013-10-20 12:25:55
  */
 /*
  * jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/

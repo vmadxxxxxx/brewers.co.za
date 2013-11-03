@@ -1,14 +1,13 @@
 	</div><? // wrapper ?>
 
-	<footer class="footer">
+	<footer id="contact" class="footer">
 
 		<div class="inner cf">
 			<a class="logo pull-left ir" rel="logo" href="<?= $config->site_url ?>">Brewer's Advertising Data</a>
 			<nav class="secondary-nav">
-				<a title="About" href="#about" class="secondary-nav-link">About</a>
-				<a title="Applications" href="#products" class="secondary-nav-link">Products</a>
-				<a title="Pricing" href="#pricing" class="secondary-nav-link">Pricing</a>
-				<a title="Contact" href="#contact" class="secondary-nav-link">Contact</a>
+				<a title="About" href="#about" class="js-smoothscroll secondary-nav-link">About</a>
+				<a title="Applications" href="#products" class="js-smoothscroll secondary-nav-link">Products</a>
+				<a title="Pricing" href="#pricing" class="js-smoothscroll secondary-nav-link">Pricing</a>
 				<a title="Log In" href="#login" class="secondary-nav-link">Log In</a>
 			</nav>
 		</div>

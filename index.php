@@ -6,16 +6,17 @@
 			<article class="inner">
 				<h1 class="section-title section-title--hero">
 					<small>Welcome to</small><br />
-					Brewers.
+					Brewer&rsquo;s
 				</h1>
 				<p class="section-copy">
-					Brewer&rsquo;s Advertising Data provides a directory of information on the advertising and marketing industries in South Africa, for the purposes of xxxx.
+					Brewer's Advertising Data is a central exchange of information within the advertising and marketing industries of South Africa.
+					It monitors the pulse and the heartbeat of the industry.
 				</p>
-				<a title="How it works" href="#section-2" class="arrow js-smoothscroll"></a>
+				<a title="How it works" href="#about" class="arrow js-smoothscroll"></a>
 			</article>
 		</section>
 
-		<section id="section-2" class="section section-howitworks section-dark">
+		<section id="about" class="section section-howitworks section-dark">
 			<article class="inner">
 				<h1 class="section-title">
 				    How it works
@@ -67,12 +68,11 @@
 						<article class="section-subcopy-cont">
 							<h3 class="section-subcopy-title">When We Know, You Know.</h3>
 							<p class="section-subcopy">
-								Changes happen in our industry all the time. This is is why
-								we update the information within our applications on a
-								minute-by-minute basis.<br />
-								<br />
-								It’s all either permission-based, or within the public domain,
-								so it’s extremely reliable.
+								We constantly monitor changes and update instantly every day. <br>
+								<br>
+								We can do this because our applications are the only ones of their kind that
+								run live on the internet which you can access using any device &mdash;
+								any where, any time.
 							</p>
 						</article>
 					</div>
@@ -80,30 +80,30 @@
 						<article class="section-subcopy-cont">
 							<h3 class="section-subcopy-title">Anywhere. Any Device.</h3>
 							<p class="section-subcopy">
-								Among the endless valley of mobile devices, there are high demands.
-								Each have their own constraints and screen proportions.<br />
+								In business today there's nothing more useless than stale
+								data and nobody can afford to wait until tomorrow to hear
+								about what's happened today. We believe this is extremely important.<br>
 								<br>
-								Our web applications respond to these, displaying the information
-								clearly, quickly and relevant to your device.
+								Access to Brewers means you can immediately pinpoint who, what, when and where.
 							</p>
 						</article>
 					</div>
 				</div>
 
-                <a title="The Products" href="#section-3" class="arrow js-smoothscroll"></a>
+                <a title="The Products" href="#products" class="arrow js-smoothscroll"></a>
 			</article>
 		</section>
 
-		<section id="section-3" class="section section-earth section-products">
+		<section id="products" class="section section-earth section-products">
 			<article class="inner">
 				<h1 class="section-title">
-				    The Products.
+				    The Products
 				</h1>
 				<p class="section-copy">
-	                Who? What? When? <br>
-	                This is where you give a brief overview of the products.
-	                Maybe 3—4 lines of copy, as each will have their own accompanying description.
-	                Nothing more.
+	                Each App will give you an edge. Whether it's knowing who the MD
+	                of a specific company is, which agency handles a certain product
+	                or what the readership is of an obscure magazine. Whatever you
+	                need to know, you can find it here.
 	            </p>
 	            <section class="app-boxes grids">
 	            	<figure class="app-box g g-1-4">
@@ -140,17 +140,18 @@
 							<header class="app-header">
 								<h2>
 									<small>The</small><br>
-									<strong>Media Almanac</strong><br>
+									<strong>Media</strong><br>
 									<small>App</small><br>
 								</h2>
 							</header>
 							<p class="app-content">
-								A media information source and lists those media in South Africa who accept advertising.
+								A media information source which lists all the media in South Africa. Includes contact details, rates, personnel, circulation, readership and much more.
 							</p>
 	            		</article>
 	            	</figure>
 	            	<figure class="app-box g g-1-4">
 	            		<article class="inner">
+	            			<aside class="ribbon">new</aside>
 							<header class="app-header">
 								<h2>
 									<small>The</small><br>
@@ -159,46 +160,55 @@
 								</h2>
 							</header>
 							<p class="app-content">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo dignissim pretium.
+								Lists vital services, which remain on the periphery of mainstream business. Freelance Media Planners, Designers, Photographers, Artists, Copywriters and many more. Free access with any other App.
 							</p>
 	            		</article>
 	            	</figure>
 	            </section>
-                <a title="Give it a spin" href="#section-4" class="arrow js-smoothscroll"></a>
+                <a title="Give it a spin" href="#pricing" class="arrow js-smoothscroll"></a>
 			</article>
 		</section>
 
-		<section id="section-4" class="section section-spin">
+		<section id="pricing" class="section section-spin">
 			<article class="inner">
 				<h1 class="section-title">
-				    Give it a spin.
+				    Give it a spin
 				</h1>
-				<section>
-					<div class="grids pricing-tiers">
-						<h3 class="section-subcopy-title">Pricing</h3>
-						<figure class="g g-1-2">
-							<h4>Tier 1</h4>
-							<p>Pellentesque erat augue, gravida vel eros non, ullamcorper fermentum dolor.</p>
-						</figure>
-						<figure class="g g-1-2">
-							<h4>Tier 2</h4>
-							<p>Pellentesque erat augue, gravida vel eros non, ullamcorper fermentum dolor. ullamcorper fermentum dolor</p>
-						</figure>
+
+				<section class="grids">
+					<div class="g g-1-2">
+						<section>
+							<div class="grids pricing-tiers">
+								<h3 class="section-subcopy-title">Pricing. There are two options: </h3>
+								<figure>
+									<h4>Option 1</h4>
+									<p>Monthly at R740 per App on a 12 month agreement.</p>
+								</figure>
+								<figure>
+									<h4>Option 2</h4>
+									<p>Annual is less expensive at R7,850 per App.</p>
+								</figure>
+							</div>
+							<p>Please note that access to the Freelance Database App will be automatically included with any subscription.</p>
+						</section>
+					</div>
+					<div class="g g-1-2">
+						<section>
+							<h3 class="section-subcopy-title">Try it at no cost &mdash; see if you like it.</h3>
+							<p>
+								Enter your details below and we'll take it from there. You will <em>not</em> hear from a high-pressure salesman &mdash; promise.
+							</p>
+						</section>
+		                <form class="form-signup" action="" method="post">
+		                	<input type="text" class="input" placeholder="Your full name" required>
+		                	<input type="email" class="input" placeholder="Your email" required>
+		                	<br>
+		                	<br>
+		                	<button class="btn" target="_blank" type="submit">Okay, let me in</button>
+		                	<br>
+		                </form>
 					</div>
 				</section>
-				<section>
-					<h3 class="section-subcopy-title">Try it for free, see if you like it.</h3>
-					<p class="small-content-block">
-						Enter your details below, and we’ll take you there now. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent hendrerit commodo augue.
-					</p>
-				</section>
-                <form class="form-signup" action="" method="post">
-                	<input type="text" class="input" placeholder="Your full name" required>
-                	<input type="email" class="input" placeholder="Your email" required>
-                	<br />
-                	<button class="btn" target="_blank" type="submit">Sign me up</button>
-                	<br>
-                </form>
 
                 <a title="News from @BrewersApps" href="#section-5" class="arrow js-smoothscroll"></a>
 			</article>
@@ -207,7 +217,7 @@
 		<section id="section-5" class="section section-earth">
 			<article class="inner">
 				<h1 class="section-title">
-				    <a title="@brewersapps" target="_blank" href="http://twitter.com/brewersapps">@BrewersApps</a>
+				    <a class="twitter-title" title="@brewersapps" target="_blank" href="http://twitter.com/brewersapps">BrewersApps</a>
 				</h1>
 				<i class="icon icon-twitter-1 icon-twitter-feed"></i>
                 <aside id="twitter-feed" class="twitter-feed grids cf loading">
@@ -223,10 +233,10 @@
 		<section id="section-6" class="section section-thefamily">
 			<article class="inner">
 				<h1 class="section-title">
-				    La Familia
+				    Our People
 				</h1>
 				<p class="section-copy">
-	                A small team. That means more time for our clients. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu justo a est posuere pulvinar. Donec vel tempus turpis, eget sodales sapien.
+	                A small team that have been doing this for 24 years, Brewer's is now a family-run business. One of us will always be on call to handle your questions.
 	            </p>
 	            <section class="grids the-family">
 					<figure class="family-member g g-1-4">
@@ -234,9 +244,10 @@
 							<img src="<?= $config->assets ?>/img/chris.png" alt="Chris Brewer">
 						</figure>
 						<figcaption>
-							<h5 class="section-subcopy-title">Chris Brewer <br><small>Main Guy</small></h5>
+							<h5 class="section-subcopy-title">Chris <br><small>Main Guy</small></h5>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu justo a est posuere pulvinar. Donec vel tempus turpis, eget sodales sapien.
+								He now runs Brewer's Apps full-time after having acquired 24 years experience
+								in the Advertising and Marketing industry and is also your first point of contact.
 							</p>
 						</figcaption>
 					</figure>
@@ -245,9 +256,9 @@
 							<img src="<?= $config->assets ?>/img/jake.png" alt="Jake Brewer">
 						</figure>
 						<figcaption>
-							<h5 class="section-subcopy-title">Jake Brewer<br><small>Design and Branding</small></h5>
+							<h5 class="section-subcopy-title">Jake<br><small>Design and Branding</small></h5>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu justo a est posuere pulvinar. Donec vel tempus turpis, eget sodales sapien.
+								Always striving for pixel-perfect solutions. Compulsive obsessive, but for design that can only be good. Found at <a href="http://studiobrewer.com" title="studiobrewer.com">studiobrewer.com</a>.
 							</p>
 						</figcaption>
 					</figure>
@@ -256,20 +267,21 @@
 							<img src="<?= $config->assets ?>/img/adam.png" alt="Adam Brewer">
 						</figure>
 						<figcaption>
-							<h5 class="section-subcopy-title">Adam Brewer <br><small>Development</small></h5>
+							<h5 class="section-subcopy-title">Adam<br><small>Development</small></h5>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu justo a est posuere pulvinar. Donec vel tempus turpis, eget sodales sapien.
+								Web developer for <a href="http://brewerlogic.com" title="brewerlogic.com">Brewer Logic</a>,
+								he handles the technical bits; seldom understood, he makes things sounds more difficult than they really are.
 							</p>
 						</figcaption>
 					</figure>
 					<figure class="family-member g g-1-4">
 						<figure class="ri family-member-pic">
-							<img src="" alt="Tracey Baard">
+							<img src="<?= $config->assets ?>/img/tracey.jpg" alt="Tracey Baard">
 						</figure>
 						<figcaption>
-							<h5 class="section-subcopy-title">Tracey Baard<br><small>Content Manager</small></h5>
+							<h5 class="section-subcopy-title">Tracey<br><small>Content Manager</small></h5>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu justo a est posuere pulvinar. Donec vel tempus turpis, eget sodales sapien.
+								Tracey is in charge of keeping all our databases up-to-date, at all times and will usually be available when Chris isn't.
 							</p>
 						</figcaption>
 					</figure>
