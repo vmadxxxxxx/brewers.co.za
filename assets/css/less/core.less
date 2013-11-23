@@ -99,6 +99,10 @@ input:disabled {}
 input:checked {}
 input:indeterminate {} /* un-selected radio buttons :) */
 
+dl { overflow: auto; clear: both; }
+dt { float: left; clear: left; width: 65px; }
+dd { float: left; margin: 0; }
+
 /* ====================================================
     MODULES STYLES
 
@@ -663,7 +667,12 @@ input:indeterminate {} /* un-selected radio buttons :) */
     }
     p {
         .font-size(1.8);
+    }
+    p {
         margin-top: 0.6em;
+    }
+    dl {
+        .font-size(1.8);
     }
     .g {
         padding: 0 40px;
@@ -825,15 +834,29 @@ input:indeterminate {} /* un-selected radio buttons :) */
 ========================================================================== */
 
 @media screen and (max-width: 1120px) {
+    .section-howitworks {
+        overflow: hidden;
+    }
     .animations {
         .g {
             display: none;
         }
-        .g:last-of-type {
+        .g:nth-child(2) {
             width: 100%;
             display: block;
-            text-align: center;
+            .ani-dataline {
+                width: 200%;
+                margin-left: -50%;
+            }
         }
+        // .g {
+        //     display: none;
+        // }
+        // .g:last-of-type {
+        //     width: 100%;
+        //     display: block;
+        //     text-align: center;
+        // }
     }
     .app-boxes,
     .the-family {
@@ -849,13 +872,15 @@ input:indeterminate {} /* un-selected radio buttons :) */
         text-align: center;
         .secondary-nav--light {
             float: none;
-            // text-align: center;
-            margin-bottom: 2em;
             margin-top: 0;
+            margin-bottom: 2em;
         }
         .copy-legal {
             float: none;
             margin-bottom: 1em;
+        }
+        .secondary-nav-link {
+            margin: 0 1em 1em;
         }
     }
 }
@@ -947,6 +972,33 @@ input:indeterminate {} /* un-selected radio buttons :) */
         .secondary-nav--light {
             margin-top: 0;
         }
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+}
+
+@media screen and (max-width: 480px) {
+    .section-title.section-title--hero {
+        .font-size(5.5);
+    }
+    .ani-gadgets {
+        img {
+            max-width: 100%;
+        }
+    }
+    .section-howitworks .grids:not(.animations) .g {
+        padding: 0 2%;
+    }
+    .family-member {
+        margin-bottom: 2em;
+        .section-subcopy-title {
+            margin-top: 1em;
+        }
+    }
+    .twitter-title {
+        .font-size(3);
     }
 }
 

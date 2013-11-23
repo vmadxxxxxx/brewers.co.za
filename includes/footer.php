@@ -1,6 +1,6 @@
 	</div><? // wrapper ?>
 
-	<footer id="contact" class="footer">
+	<footer class="footer">
 
 		<div class="inner cf">
 			<a class="logo pull-left ir" rel="logo" href="<?= $config->site_url ?>">Brewer's Advertising Data</a>

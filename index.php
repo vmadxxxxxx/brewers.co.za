@@ -286,6 +286,47 @@
 						</figcaption>
 					</figure>
 	            </section>
+	            <a title="Get in touch" href="#contact" class="arrow js-smoothscroll"></a>
+			</article>
+		</section>
+
+		<section id="contact" class="section section-spin section-earth">
+			<article class="inner">
+				<h1 class="section-title">
+				    Contact Us
+				</h1>
+
+				<section class="grids">
+					<div class="g g-1-2">
+						<section>
+							<div class="grids pricing-tiers">
+								<h3 class="section-subcopy-title">Sales &amp; Admin</h3>
+								<figure>
+									<h4>Chris Brewer</h4>
+									<dl>
+										<dt>Office</dt> <dd>021 702 4484</dd>
+										<dt>Mobile</dt> <dd>082 551 1371</dd>
+										<dt>Fax</dt> <dd>086 638 7688</dd>
+										<dt>Email</dt> <dd><a href="mailto:chris@brewers.co.za">chris@brewers.co.za</a></dd>
+									</dl>
+								</figure>
+							</div>
+						</section>
+					</div>
+					<div class="g g-1-2">
+						<section class="pricing-tiers">
+							<h3 class="section-subcopy-title">Information Updates</h3>
+							<figure>
+								<h4>Tracey Baard</h4>
+								<dl>
+									<dt>Office</dt> <dd>083 360 1052</dd>
+									<dt>Mobile</dt> <dd>086 504 9013</dd>
+									<dt>Email</dt> <dd><a href="mailto:tracey@brewers.co.za">tracey@brewers.co.za</a></dd>
+								</dl>
+							</figure>
+						</section>
+					</div>
+				</section>
 			</article>
 		</section>
 

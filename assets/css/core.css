@@ -942,6 +942,19 @@ a {
   transition: 0.2s all ease;
 }
 /* un-selected radio buttons :) */
+dl {
+  overflow: auto;
+  clear: both;
+}
+dt {
+  float: left;
+  clear: left;
+  width: 65px;
+}
+dd {
+  float: left;
+  margin: 0;
+}
 /* ====================================================
     MODULES STYLES
 
@@ -1497,7 +1510,13 @@ a {
 .section-spin p {
   font-size: 18px;
   font-size: 1.8rem;
+}
+.section-spin p {
   margin-top: 0.6em;
+}
+.section-spin dl {
+  font-size: 18px;
+  font-size: 1.8rem;
 }
 .section-spin .g {
   padding: 0 40px;
@@ -1682,13 +1701,19 @@ a {
     Never set breakpoints for devices, only when the design requires it.
 ========================================================================== */
 @media screen and (max-width: 1120px) {
+  .section-howitworks {
+    overflow: hidden;
+  }
   .animations .g {
     display: none;
   }
-  .animations .g:last-of-type {
+  .animations .g:nth-child(2) {
     width: 100%;
     display: block;
-    text-align: center;
+  }
+  .animations .g:nth-child(2) .ani-dataline {
+    width: 200%;
+    margin-left: -50%;
   }
   .app-boxes,
   .the-family {
@@ -1705,12 +1730,15 @@ a {
   }
   .footer .secondary-nav--light {
     float: none;
-    margin-bottom: 2em;
     margin-top: 0;
+    margin-bottom: 2em;
   }
   .footer .copy-legal {
     float: none;
     margin-bottom: 1em;
+  }
+  .footer .secondary-nav-link {
+    margin: 0 1em 1em;
   }
 }
 @media screen and (max-width: 800px) {
@@ -1791,6 +1819,31 @@ a {
   }
   .footer .secondary-nav--light {
     margin-top: 0;
+  }
+}
+@media screen and (max-width: 520px) {
+  
+}
+@media screen and (max-width: 480px) {
+  .section-title.section-title--hero {
+    font-size: 55px;
+    font-size: 5.5rem;
+  }
+  .ani-gadgets img {
+    max-width: 100%;
+  }
+  .section-howitworks .grids:not(.animations) .g {
+    padding: 0 2%;
+  }
+  .family-member {
+    margin-bottom: 2em;
+  }
+  .family-member .section-subcopy-title {
+    margin-top: 1em;
+  }
+  .twitter-title {
+    font-size: 30px;
+    font-size: 3rem;
   }
 }
 /* ==|== print styles =======================================================
