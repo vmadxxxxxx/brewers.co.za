@@ -838,25 +838,25 @@ dd { float: left; margin: 0; }
         overflow: hidden;
     }
     .animations {
-        .g {
-            display: none;
-        }
-        .g:nth-child(2) {
-            width: 100%;
-            display: block;
-            .ani-dataline {
-                width: 200%;
-                margin-left: -50%;
-            }
-        }
         // .g {
         //     display: none;
         // }
-        // .g:last-of-type {
+        // .g:nth-child(2) {
         //     width: 100%;
         //     display: block;
-        //     text-align: center;
+        //     .ani-dataline {
+        //         width: 200%;
+        //         margin-left: -50%;
+        //     }
         // }
+        .g {
+            display: none;
+        }
+        .g:last-of-type {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
     }
     .app-boxes,
     .the-family {

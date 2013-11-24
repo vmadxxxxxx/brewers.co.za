@@ -1707,13 +1707,10 @@ dd {
   .animations .g {
     display: none;
   }
-  .animations .g:nth-child(2) {
+  .animations .g:last-of-type {
     width: 100%;
     display: block;
-  }
-  .animations .g:nth-child(2) .ani-dataline {
-    width: 200%;
-    margin-left: -50%;
+    text-align: center;
   }
   .app-boxes,
   .the-family {
