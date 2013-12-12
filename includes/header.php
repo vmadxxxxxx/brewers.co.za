@@ -51,7 +51,7 @@
 				<a title="Products" href="#products" class="js-smoothscroll main-nav-link">Products</a>
 				<a title="Pricing" href="#pricing" class="js-smoothscroll main-nav-link">Pricing</a>
 				<a title="Contact" href="#contact" class="js-smoothscroll main-nav-link">Contact</a>
-				<a title="Log in" href="#login" class="btn log-in main-nav-link">Log In</a>
+				<a title="Log in" href="/BDA" class="btn log-in main-nav-link">Log In</a>
 			</nav>
 		</div>
 	</header>

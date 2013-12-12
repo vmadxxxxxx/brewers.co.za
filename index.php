@@ -269,7 +269,7 @@
 						<figcaption>
 							<h5 class="section-subcopy-title">Adam<br><small>Development</small></h5>
 							<p>
-								Web developer for <a href="http://brewerlogic.com" title="brewerlogic.com">Brewer Logic</a>,
+								Web developer for <a href="http://brewerlogic.com" title="brewerlogic.com">brewerlogic.com</a>,
 								he handles the technical bits; seldom understood, he makes things sounds more difficult than they really are.
 							</p>
 						</figcaption>
