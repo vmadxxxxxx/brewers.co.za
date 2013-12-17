@@ -50,7 +50,11 @@
 ::-moz-selection{ background:@c-blue; color:#F8F8F8; text-shadow:none; }
 ::selection { background:@c-blue; color:#F8F8F8; text-shadow:none; }
 
-html, body { -web-font-smoothing: antialiased; }
+html, body {
+    -web-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-smooth: always;
+}
 html {
     font-size: 62.5%;
 }
@@ -166,7 +170,7 @@ dd { float: left; margin: 0; }
 
 }
 .section {
-    padding-top: 5em;
+    padding-top: 7em;
     padding-bottom: 7em;
     position: relative;
     .inner {
@@ -213,7 +217,11 @@ dd { float: left; margin: 0; }
     }
 }
 
-.twitter-title {
+a.twitter-title {
+    color: @c-darkgrey;
+    &:hover {
+        color: @c-blue;
+    }
     &:before {
         content: "@";
         display: inline-block;
@@ -285,7 +293,7 @@ dd { float: left; margin: 0; }
     }
 }
 .section-copy {
-    margin: 1em auto;
+    margin: 2em auto;
     max-width: 580px;
     font-weight: 400;
     text-align: center;
@@ -365,7 +373,15 @@ dd { float: left; margin: 0; }
             text-decoration: underline;
         }
     }
-    .g { padding: 0 2%; }
+    .g {
+        padding: 0 4%;
+        &:first-child {
+            padding-left: 0;
+        }
+        &:last-child {
+            padding-right: 0;
+        }
+    }
     .g-1 {
         text-align: center;
     }
@@ -410,13 +426,18 @@ dd { float: left; margin: 0; }
     > article {
         font-weight: 500;
     }
+
+    time,
+    a {
+        font-weight: 600;
+    }
 }
 .icon-twitter-feed {
     .font-size(5);
-    color: darken(@c-earth, 8%);
+    color: darken(@c-earth, 10%);
     display: block;
     text-align: center;
-    margin: -0.4em auto 1em;
+    margin: 0em auto 1em;
 }
 
 .btn {
@@ -495,7 +516,7 @@ dd { float: left; margin: 0; }
 
 .app-boxes {
     max-width: 100%;
-    margin: 3em auto 1em;
+    margin: 5em auto 1em;
 }
 .app-box {
     text-align: center;
@@ -592,13 +613,17 @@ dd { float: left; margin: 0; }
 }
 
 .family-member {
-    padding: 0 1.4em;
     .font-size(1.8);
-    margin-bottom: 1.4em;
+    margin: 0 0 1.4em;
+    min-height: 460px;
+
+    figcaption {
+        padding: 0 1.4em;
+    }
 
     .ri {
         border-radius: 50%;
-        border: 6px solid @c-earth;
+        border: 7px solid @c-earth;
         width: 196px;
         height: 196px;
         overflow: hidden;
@@ -644,7 +669,9 @@ dd { float: left; margin: 0; }
 .section-welcome {
     background: #eee url(../img/bg.welcome.jpg) no-repeat center top;
     background-size: cover;
-    padding-bottom: 4em;
+    padding-bottom: 5em;
+    padding-top: 5em;
+    min-height: 600px;
 }
 
 .section-howitworks {
@@ -665,7 +692,8 @@ dd { float: left; margin: 0; }
     .section-subcopy-title {
         // text-align: center;
     }
-    p {
+    p,
+    h4 {
         .font-size(1.8);
     }
     p {
@@ -754,14 +782,17 @@ dd { float: left; margin: 0; }
     &.popup-2 {
         .animation-popup;
         -webkit-animation-delay: 5s;
+        animation-delay: 5s;
     }
     &.popup-3 {
         .animation-popup;
         -webkit-animation-delay: 10s;
+        animation-delay: 10s;
     }
     &.popup-4 {
         .animation-popup;
         -webkit-animation-delay: 15s;
+        animation-delay: 15s;
     }
 
 }
@@ -835,7 +866,7 @@ dd { float: left; margin: 0; }
 
 @media screen and (max-width: 1120px) {
     .section-howitworks {
-        overflow: hidden;
+        // overflow: hidden;
     }
     .animations {
         // .g {

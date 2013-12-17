@@ -32,6 +32,25 @@ module.exports = function(grunt) {
                 tasks: ['less:development']
             }
         },
+        autoshot: {
+            default: {
+                options: {
+                    // necessary config
+                    path: '/Users/adam/Desktop/',
+                    // optional config, must set either remote or local
+                    remote: {
+                        files: [
+                            { src: 'http://local.brewers.co.za/', dest: 'screenshot.png' }
+                        ]
+                    },
+                    viewport: [
+                        '1400x1000',
+                        '720x1000',
+                        '320x1000'
+                    ]
+                }
+            }
+        },
 
         // I need the the css output to originate from the same location.
         // The difference between the production level is the
@@ -101,7 +120,6 @@ module.exports = function(grunt) {
                     banner: '/*!\n' +
                         ' * <%= pkg.name %> - <%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd H:MM:ss") %>\n' +
                         ' * Development\n' +
-                        ' * https://github.com/adamcbrewer/launchpad\n *\n' +
                         ' */\n',
                     compress: false,
                     preserveComments: true,
@@ -116,7 +134,7 @@ module.exports = function(grunt) {
                             'assets/js/plugins.js',
                             'assets/js/script.js',
                         ],
-                        dest: 'assets/js/min/script.dev.min.js'
+                        dest: 'assets/js/build.js'
                     }
                 ]
             },
@@ -127,7 +145,6 @@ module.exports = function(grunt) {
                     banner: '/*!\n' +
                         ' * <%= pkg.name %> - <%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd H:MM:ss") %>\n' +
                         ' * Release\n' +
-                        ' * https://github.com/adamcbrewer/launchpad\n *\n' +
                         ' */\n',
                     compress: true,
                     preserveComments: false,
@@ -141,7 +158,7 @@ module.exports = function(grunt) {
                             'assets/js/plugins.js',
                             'assets/js/script.js',
                         ],
-                        dest: 'assets/js/min/script.release.min.js'
+                        dest: 'assets/js/build.min.js'
                     }
                 ]
             }
@@ -270,7 +287,7 @@ module.exports = function(grunt) {
      * Generate a buiild of the app
      * still in development
      */
-    grunt.registerTask('build-production', [
+    grunt.registerTask('build', [
         'less:production',
         'uglify:production'
     ]);

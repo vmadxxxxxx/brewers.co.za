@@ -8,7 +8,7 @@
 				<a title="About" href="#about" class="js-smoothscroll secondary-nav-link">About</a>
 				<a title="Applications" href="#products" class="js-smoothscroll secondary-nav-link">Products</a>
 				<a title="Pricing" href="#pricing" class="js-smoothscroll secondary-nav-link">Pricing</a>
-				<a title="Log In" href="#login" class="secondary-nav-link">Log In</a>
+				<a title="Log In" href="/BDA" class="secondary-nav-link">Log In</a>
 			</nav>
 		</div>
 		<hr class="hr">
@@ -31,9 +31,12 @@
 
 	</footer>
 
+	<?/*
 	<script src="<?= $config->assets ?>/js/libs/jquery.js"></script>
 	<script src="<?= $config->assets ?>/js/plugins.js"></script>
 	<script src="<?= $config->assets ?>/js/script.js"></script>
+	*/?>
+	<script src="<?= $config->assets ?>/js/build.min.js"></script>
 
 </body>
 </html>

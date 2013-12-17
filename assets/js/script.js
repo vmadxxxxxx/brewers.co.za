@@ -43,9 +43,9 @@
 		var wHeight = window.innerHeight,
 			wWidth = window.innerWidth;
 		$sections
+			// .css({'min-height': wHeight})
 			.addClass('center-content')
-			.css({'min-height': wHeight})
-			// .first().css({'margin-top': -126});
+		// 	.slice(1).css({'min-height': wHeight})
 		// Smooth scrolling
 		$('.js-smoothscroll').smoothScroll({
 			offset: 1,
@@ -99,7 +99,6 @@
 				urls = tweet.entities.urls;
 				i = urls.length;
 				str = text;
-				console.log(urls);
 				while (i--) {
 					str = str.replace(urls[i].url, '<a target="_blank" href="'+urls[i].expanded_url+'">'+urls[i].display_url+'</a>');
 				}

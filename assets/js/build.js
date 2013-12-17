@@ -1,8 +1,6 @@
 /*!
- * launchpad - 0.1.0 - 2013-12-12 11:32:49
+ * brewers - 0.1.0 - 2013-12-17 9:52:13
  * Development
- * https://github.com/adamcbrewer/launchpad
- *
  */
 /*!
  * jQuery JavaScript Library v1.10.2
@@ -7750,10 +7748,8 @@ jQuery.extend(jQuery.easing, {
     var $sections = $(".section");
     if ($sections.length) {
         var wHeight = window.innerHeight, wWidth = window.innerWidth;
-        $sections.addClass("center-content").css({
-            "min-height": wHeight
-        });
-        // .first().css({'margin-top': -126});
+        $sections.addClass("center-content");
+        // 	.slice(1).css({'min-height': wHeight})
         // Smooth scrolling
         $(".js-smoothscroll").smoothScroll({
             offset: 1,
@@ -7796,7 +7792,6 @@ jQuery.extend(jQuery.easing, {
                 urls = tweet.entities.urls;
                 i = urls.length;
                 str = text;
-                console.log(urls);
                 while (i--) {
                     str = str.replace(urls[i].url, '<a target="_blank" href="' + urls[i].expanded_url + '">' + urls[i].display_url + "</a>");
                 }

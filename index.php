@@ -10,7 +10,7 @@
 				</h1>
 				<p class="section-copy">
 					Brewer's Advertising Data is a central exchange of information within the advertising and marketing industries of South Africa.
-					It monitors the pulse and the heartbeat of the industry.
+					It contains data on people, products and companies &mdash; information you need to know.
 				</p>
 				<a title="How it works" href="#about" class="arrow js-smoothscroll"></a>
 			</article>
@@ -21,6 +21,7 @@
 				<h1 class="section-title">
 				    How it works
 				</h1>
+				<br><br><br>
 				<section class="animations grids">
 					<figure class="ani-servers g g-1-3">
 						<img src="<?= $config->assets ?>/img/servers.png" alt="Servers">
@@ -29,31 +30,31 @@
 						<div class="ani-popups">
 							<aside class="ani-popup popup-1">
 								<header>
-									Jake Brewer<br />
-									Senior Designer
+									Daniel van der Merwe<br />
+									News Presenter
 								</header>
 								<footer>added</footer>
 							</aside>
 							<aside class="ani-popup popup-2">
 								<header>
-									Adam Brewer<br />
-									Senior Developer
+									Sally Ambrose<br />
+									Client Service Manager
 								</header>
-								<footer>removed</footer>
+								<footer>updated</footer>
 							</aside>
 							<aside class="ani-popup popup-3">
 								<header>
-									Chris Brewer<br />
-									Director
+									Chris Wayne Perkins<br />
+									Chairman
 								</header>
 								<footer>added</footer>
 							</aside>
 							<aside class="ani-popup popup-4">
 								<header>
-									Michele Brewer<br />
-									Family Supervisor
+									Carrie Pretorius<br />
+									Beauty Editor
 								</header>
-								<footer>all-knowing</footer>
+								<footer>added</footer>
 							</aside>
 						</div>
 						<div class="ani-dataline"></div>
@@ -84,7 +85,7 @@
 								data and nobody can afford to wait until tomorrow to hear
 								about what's happened today. We believe this is extremely important.<br>
 								<br>
-								Access to Brewers means you can immediately pinpoint who, what, when and where.
+								Access to Brewer's means you can immediately pinpoint who, what, when and where.
 							</p>
 						</article>
 					</div>
@@ -160,7 +161,8 @@
 								</h2>
 							</header>
 							<p class="app-content">
-								Lists vital services, which remain on the periphery of mainstream business. Freelance Media Planners, Designers, Photographers, Artists, Copywriters and many more. Free access with any other App.
+								Coming soon!
+								<?/*Lists vital services, which remain on the periphery of mainstream business. Freelance Media Planners, Designers, Photographers, Artists, Copywriters and many more. Free access with any other App.*/?>
 							</p>
 	            		</article>
 	            	</figure>
@@ -176,9 +178,9 @@
 				</h1>
 
 				<section class="grids">
-					<div class="g g-1-2">
+					<div <?/*class="g g-1-2"*/?>>
 						<section>
-							<div class="grids pricing-tiers">
+							<div class="<?/*grids pricing-tiers*/?>">
 								<h3 class="section-subcopy-title">Pricing. There are two options: </h3>
 								<figure>
 									<h4>Option 1</h4>
@@ -189,9 +191,10 @@
 									<p>Annual is less expensive at R7,850 per App.</p>
 								</figure>
 							</div>
-							<p>Please note that access to the Freelance Database App will be automatically included with any subscription.</p>
+							<?/*<p>Please note that access to the Freelance Database App will be automatically included with any subscription.</p>*/?>
 						</section>
 					</div>
+					<?/*
 					<div class="g g-1-2">
 						<section>
 							<h3 class="section-subcopy-title">Try it at no cost &mdash; see if you like it.</h3>
@@ -208,6 +211,7 @@
 		                	<br>
 		                </form>
 					</div>
+					*/?>
 				</section>
 
                 <a title="News from @BrewersApps" href="#section-5" class="arrow js-smoothscroll"></a>
@@ -258,7 +262,7 @@
 						<figcaption>
 							<h5 class="section-subcopy-title">Jake<br><small>Design and Branding</small></h5>
 							<p>
-								Always striving for pixel-perfect solutions. Compulsive obsessive, but for design that can only be good. Found at <a href="http://studiobrewer.com" title="studiobrewer.com">studiobrewer.com</a>.
+								Always striving for pixel-perfect solutions. Compulsive obsessive, but for design that can only be good. Found at <a target="_blank" href="http://studiobrewer.com" title="studiobrewer.com">studiobrewer.com</a>.
 							</p>
 						</figcaption>
 					</figure>
@@ -269,7 +273,7 @@
 						<figcaption>
 							<h5 class="section-subcopy-title">Adam<br><small>Development</small></h5>
 							<p>
-								Web developer for <a href="http://brewerlogic.com" title="brewerlogic.com">brewerlogic.com</a>,
+								Web developer for <a target="_blank" href="http://brewerlogic.com" title="brewerlogic.com">brewerlogic.com</a>,
 								he handles the technical bits; seldom understood, he makes things sounds more difficult than they really are.
 							</p>
 						</figcaption>
