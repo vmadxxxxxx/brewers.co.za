@@ -373,15 +373,6 @@ a.twitter-title {
             text-decoration: underline;
         }
     }
-    .g {
-        padding: 0 4%;
-        &:first-child {
-            padding-left: 0;
-        }
-        &:last-child {
-            padding-right: 0;
-        }
-    }
     .g-1 {
         text-align: center;
     }
@@ -418,6 +409,16 @@ a.twitter-title {
 .tweets {
     .transition(0.8s ease all 0.6s);
     opacity: 1;
+
+    .g {
+        padding: 0 4%;
+        &:first-child {
+            padding-left: 0;
+        }
+        &:last-child {
+            padding-right: 0;
+        }
+    }
 
     &.hide {
         opacity: 0;
@@ -909,6 +910,7 @@ a.twitter-title {
         .copy-legal {
             float: none;
             margin-bottom: 1em;
+            margin-right: 0;
         }
         .secondary-nav-link {
             margin: 0 1em 1em;
@@ -969,6 +971,11 @@ a.twitter-title {
             width: 100%;
         }
     }
+    .tweets {
+        .g {
+            padding: 0 2% !important;
+        }
+    }
     .section-spin {
         .g { padding: 0; }
         .btn { width: 100%; }
@@ -1014,6 +1021,9 @@ a.twitter-title {
     .section-title.section-title--hero {
         .font-size(5.5);
     }
+    .section-title {
+        .font-size(3.4);
+    }
     .ani-gadgets {
         img {
             max-width: 100%;
@@ -1027,9 +1037,6 @@ a.twitter-title {
         .section-subcopy-title {
             margin-top: 1em;
         }
-    }
-    .twitter-title {
-        .font-size(3);
     }
 }
 

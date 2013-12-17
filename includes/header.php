@@ -20,7 +20,7 @@
 	<meta name="keywords" content="<?= $config->site_keywords ?>">
 
 	<meta property="og:title" content="<?= $config->site_name ?>"/>
-	<meta property="og:image" content="<?= $config->assets ?>/img/logo.png"/>
+	<meta property="og:image" content="<?= $config->assets ?>/img/logo-fb.png"/>
 	<meta property="og:url" content="<?= $config->current_url ?>"/>
 	<meta property="og:site_name" content="<?= $config->site_name ?>"/>
 	<meta property="og:description" content="<?= $config->site_desc ?>"/>
@@ -29,12 +29,12 @@
 	<link href="<?= $config->assets ?>/css/core.css" rel="stylesheet">
 	<script src="<?= $config->assets ?>/js/libs/modernizr-custom.js"></script>
 
-	<? if ( $config->env !== 'dev' ) : ?>
+	<? if ( $config->env != 'dev' ) : ?>
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 			ga('create', '<?= $config->ga ?>', 'brewers.co.za');
 			ga('send', 'pageview');
 		</script>
