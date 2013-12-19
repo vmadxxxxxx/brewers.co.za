@@ -114,7 +114,9 @@
 				if ( tweets[i] ) {
 					var tweet = tweets[i],
 						tweetDate = new Date(tweet.created_at),
-						niceDate = tweetDate.getUTCDate() + ' ' + months[tweetDate.getUTCMonth()] + ' at ' + tweetDate.getHours() + ':' + tweetDate.getMinutes(),
+						minutesRaw = tweetDate.getMinutes(),
+						minutes = ( parseInt(minutesRaw, 10) < 10 ) ? minutesRaw + '0' : minutesRaw,
+						niceDate = tweetDate.getUTCDate() + ' ' + months[tweetDate.getUTCMonth()] + ' at ' + tweetDate.getHours() + ':' + minutes,
 						tweetText = tweet.text;
 
 					tweetText = addMentions(tweetText, tweet);

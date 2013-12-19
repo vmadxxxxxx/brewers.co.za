@@ -1,5 +1,5 @@
 /*!
- * brewers - 0.1.0 - 2013-12-17 11:18:04
+ * brewers - 0.1.0 - 2013-12-19 13:13:19
  * Development
  */
 /*!
@@ -7802,7 +7802,7 @@ jQuery.extend(jQuery.easing, {
             var i = 0, tweets = resp, tweetsHtml = "";
             for (i; i < 3; i++) {
                 if (tweets[i]) {
-                    var tweet = tweets[i], tweetDate = new Date(tweet.created_at), niceDate = tweetDate.getUTCDate() + " " + months[tweetDate.getUTCMonth()] + " at " + tweetDate.getHours() + ":" + tweetDate.getMinutes(), tweetText = tweet.text;
+                    var tweet = tweets[i], tweetDate = new Date(tweet.created_at), minutesRaw = tweetDate.getMinutes(), minutes = parseInt(minutesRaw, 10) < 10 ? minutesRaw + "0" : minutesRaw, niceDate = tweetDate.getUTCDate() + " " + months[tweetDate.getUTCMonth()] + " at " + tweetDate.getHours() + ":" + minutes, tweetText = tweet.text;
                     tweetText = addMentions(tweetText, tweet);
                     tweetText = addUrls(tweetText, tweet);
                     tweetsHtml += tweetTemplate.replace("{{body}}", tweetText).replace("{{link}}", "https://twitter.com/brewersapps/status/" + tweet.id_str).replace(/{{datetime}}/g, tweet.created_at).replace("{{nicedate}}", niceDate);

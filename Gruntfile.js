@@ -193,6 +193,7 @@ module.exports = function(grunt) {
             "uglify" : true,
             // Define any tests you want to impliticly include.
             "tests" : [
+                "touch"
                 /*
                 "flexbox",
                 "boxshadow",

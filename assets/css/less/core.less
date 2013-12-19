@@ -128,7 +128,12 @@ dd { float: left; margin: 0; }
     &:focus,
     &:hover {
         color: @c-blue;
-        border-bottom-color: @c-yellow;
+    }
+    .no-touch & {
+        &:focus,
+        &:hover {
+            border-bottom-color: @c-yellow;
+        }
     }
 
     &.log-in {
@@ -769,7 +774,7 @@ a.twitter-title {
         position: absolute;
         left: 0;
         right: 0;
-        bottom: -27px;
+        bottom: -25px;
         margin: auto;
         border-top: 14px solid #262626;
         border-right: 20px solid transparent;
@@ -827,20 +832,15 @@ a.twitter-title {
 }
 .logo {
     display: block;
-    width: 203px;
+    width: 200px;
     height: 62px;
     background: transparent url(../img/logo.png) no-repeat top left;
-    background-image: -webkit-image-set(url(../img/logo-l.png) 2x);
     background-repeat: no-repeat;
+    // background-image: -webkit-image-set(url(../img/logo@2x.png) 2x);
     background-size: 100%;
     margin-top: -8px;
     padding-top: 2.6em;
     .transition(0.2s ease all);
-    -webkit-filter: grayscale(0);
-
-    &:hover {
-        -webkit-filter: grayscale(1);
-    }
 }
 .pull-left {
     float: left;
@@ -1015,8 +1015,14 @@ a.twitter-title {
     }
 }
 
-@media screen and (max-width: 520px) {
-
+@media screen and (max-width: 560px) {
+    .main-nav-link {
+        display: block;
+        text-align: center;
+        max-width: 120px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -1025,6 +1031,9 @@ a.twitter-title {
     }
     .section-title {
         .font-size(3.4);
+    }
+    .section-copy {
+        .font-size(2.2);
     }
     .ani-gadgets {
         img {
@@ -1039,6 +1048,18 @@ a.twitter-title {
         .section-subcopy-title {
             margin-top: 1em;
         }
+    }
+    .footer .secondary-nav-link {
+        display: block;
+        &:hover {
+            border-bottom-color: transparent;
+        }
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo {
+        background-image: url(../img/logo@2x.png);
     }
 }
 

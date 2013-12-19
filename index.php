@@ -308,8 +308,8 @@
 								<figure>
 									<h4>Chris Brewer</h4>
 									<dl>
-										<dt>Office</dt> <dd>021 702 4484</dd>
-										<dt>Mobile</dt> <dd>082 551 1371</dd>
+										<dt>Office</dt> <dd><a href="tel:+27217024484">021 702 4484</a></dd>
+										<dt>Mobile</dt> <dd><a href="tel:+27825511371">082 551 1371</a></dd>
 										<dt>Fax</dt> <dd>086 638 7688</dd>
 										<dt>Email</dt> <dd><a href="mailto:chris@brewers.co.za">chris@brewers.co.za</a></dd>
 									</dl>
@@ -323,8 +323,8 @@
 							<figure>
 								<h4>Tracey Baard</h4>
 								<dl>
-									<dt>Office</dt> <dd>083 360 1052</dd>
-									<dt>Mobile</dt> <dd>086 504 9013</dd>
+									<dt>Office</dt> <dd><a href="+27833601052">083 360 1052</a></dd>
+									<dt>Mobile</dt> <dd><a href="+27865049013">086 504 9013</a></dd>
 									<dt>Email</dt> <dd><a href="mailto:tracey@brewers.co.za">tracey@brewers.co.za</a></dd>
 								</dl>
 							</figure>

@@ -8,6 +8,7 @@
 				<a title="About" href="#about" class="js-smoothscroll secondary-nav-link">About</a>
 				<a title="Applications" href="#products" class="js-smoothscroll secondary-nav-link">Products</a>
 				<a title="Pricing" href="#pricing" class="js-smoothscroll secondary-nav-link">Pricing</a>
+				<a title="Contact" href="#contact" class="js-smoothscroll secondary-nav-link">Contact</a>
 				<a title="Log In" href="/BDA" class="secondary-nav-link">Log In</a>
 			</nav>
 		</div>
