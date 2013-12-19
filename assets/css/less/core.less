@@ -709,9 +709,10 @@ a.twitter-title {
         .font-size(1.8);
     }
     .g {
-        padding: 0 40px;
-        &:first-child { padding-left: 0; }
-        &:last-child { padding-right: 0; }
+        min-width: 280px;
+        padding: 0 0 0 30px;
+        // &:first-child { padding-left: 20px; padding-right: 0; }
+        // &:last-child { padding-right: 0; }
     }
 }
 
@@ -832,7 +833,7 @@ a.twitter-title {
 }
 .logo {
     display: block;
-    width: 200px;
+    width: 203px;
     height: 62px;
     background: transparent url(../img/logo.png) no-repeat top left;
     background-repeat: no-repeat;
@@ -1057,9 +1058,17 @@ a.twitter-title {
     }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media  (-webkit-min-device-pixel-ratio: 2),
+        (min--moz-min-device-pixel-ratio: 2),
+        (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) {
     .logo {
         background-image: url(../img/logo@2x.png);
+    }
+    .footer {
+        .logo {
+            background-image: url(../img/logo_alt@2x.png);
+        }
     }
 }
 
