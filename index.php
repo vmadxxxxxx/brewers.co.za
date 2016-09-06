@@ -107,7 +107,7 @@
 	                need to know, you can find it here.
 	            </p>
 	            <section class="app-boxes grids">
-	            	<figure class="app-box g g-1-4">
+	            	<figure class="app-box g g-1-3">
 	            		<article class="inner">
 							<header class="app-header">
 								<h2>
@@ -122,7 +122,7 @@
 							</p>
 	            		</article>
 	            	</figure>
-	            	<figure class="app-box g g-1-4">
+	            	<figure class="app-box g g-1-3">
 	            		<article class="inner">
 							<header class="app-header">
 								<h2>
@@ -136,7 +136,7 @@
 							</p>
 	            		</article>
 	            	</figure>
-	            	<figure class="app-box g g-1-4">
+	            	<figure class="app-box g g-1-3">
 	            		<article class="inner">
 							<header class="app-header">
 								<h2>
@@ -150,6 +150,7 @@
 							</p>
 	            		</article>
 	            	</figure>
+                    <?php /*
 	            	<figure class="app-box g g-1-4">
 	            		<article class="inner">
 	            			<aside class="ribbon">new</aside>
@@ -162,10 +163,11 @@
 							</header>
 							<p class="app-content">
 								Coming soon!
-								<?/*Lists vital services, which remain on the periphery of mainstream business. Freelance Media Planners, Designers, Photographers, Artists, Copywriters and many more. Free access with any other App.*/?>
+								<? // Lists vital services, which remain on the periphery of mainstream business. Freelance Media Planners, Designers, Photographers, Artists, Copywriters and many more. Free access with any other App. ?>
 							</p>
 	            		</article>
 	            	</figure>
+                    */ ?>
 	            </section>
                 <a title="Give it a spin" href="#pricing" class="arrow js-smoothscroll"></a>
 			</article>
@@ -308,9 +310,7 @@
 								<figure>
 									<h4>Chris Brewer</h4>
 									<dl>
-										<dt>Office</dt> <dd><a href="tel:+27217024484">021 702 4484</a></dd>
 										<dt>Mobile</dt> <dd><a href="tel:+27825511371">082 551 1371</a></dd>
-										<dt>Fax</dt> <dd>086 638 7688</dd>
 										<dt>Email</dt> <dd><a href="mailto:chris@brewers.co.za">chris@brewers.co.za</a></dd>
 									</dl>
 								</figure>

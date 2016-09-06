@@ -98,7 +98,7 @@ module.exports = function(grunt) {
                     banner: '/*!\n' +
                         ' * Plugins - <%= grunt.template.today("yyyy-mm-dd H:MM:ss") %>\n' +
                         ' */\n',
-                    compress: false,
+                    compress: {},
                     preserveComments: 'all',
                     beautify: true,
                     mangle: false,
@@ -121,7 +121,7 @@ module.exports = function(grunt) {
                         ' * <%= pkg.name %> - <%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd H:MM:ss") %>\n' +
                         ' * Development\n' +
                         ' */\n',
-                    compress: false,
+                    compress: {},
                     preserveComments: true,
                     mangle: false,
                     beautify: true,
@@ -146,7 +146,7 @@ module.exports = function(grunt) {
                         ' * <%= pkg.name %> - <%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd H:MM:ss") %>\n' +
                         ' * Release\n' +
                         ' */\n',
-                    compress: true,
+                    compress: {},
                     preserveComments: false,
                     mangle: false,
                     report: 'min'
